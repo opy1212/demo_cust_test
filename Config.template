@@ -3,7 +3,7 @@
 
   "Description": "AWS CloudFormation Sample Template Config: This template demonstrates the usage of AWS Config resources.  **WARNING** You will be billed for the AWS resources used if you create a stack from this template.",
 
-  "Parameters": {
+  "Parameters": {---------
     "Ec2VolumeAutoEnableIO": {
       "Type": "String",
       "Default": "false",
@@ -245,4 +245,4 @@
       "Value": {"Fn::GetAtt": ["ConfigRuleForVolumeAutoEnableIO", "Compliance.Type"]}
     }
   }
-}
+}
